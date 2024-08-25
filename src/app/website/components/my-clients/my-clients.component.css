@@ -1,7 +1,60 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: var(--spacing-md);
-    padding: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    text-align: center;
+
+    .block__logos {
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        gap: var(--spacing-sm);
+
+        img {
+        
+            width: 100%;
+            height: fit-content;
+        }
+    }
+
+}
+
+/* ? Breakpoint MD */
+@media screen and (min-width:461px) and (max-width:1024px) {
+    .container {
+        .block__logos {
+            display: grid;
+            grid-template-columns:repeat(5,1fr);
+            grid-template-rows: repeat(2,1fr);
+            padding: var(--spacing-md) 0;
+            gap: var(--spacing-sm);
+        
+            img {
+            
+                width: 100%;
+                height: fit-content;
+            }
+        }
+    }
+    
+}
+
+/* ? Breakpoint SM */
+@media screen and (max-width:460px) {
+    .container {
+        .block__logos {
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows: repeat(5,1fr);
+            padding: var(--spacing-md) 0;
+            gap: var(--spacing-sm);
+        
+            img {
+            
+                width: 100%;
+                height: fit-content;
+            }
+        }
+    }
+    
 }
