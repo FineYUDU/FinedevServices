@@ -1,0 +1,51 @@
+<!-- <div class="bg--block"></div> -->
+<div class="hero block">
+    <div class="block__left">
+        <div class="block__left--header">
+            <h1 class="
+            font__size--h3
+            font__weight--bold
+            font__color--primary
+                ">
+                {{ 'home.hero.title' | translate:translateService.GetLang }}
+            </h1>
+            <h2 class="
+            font__size--h6
+            font__weight--regular
+            font__color--secondary
+                ">
+                {{ 'home.hero.sub-title' | translate:translateService.GetLang }}
+            </h2>
+            
+        </div>
+        
+        <p class="
+        font__size--b1
+        font__weight--regular
+        font__color--tertiary
+            ">
+            <!-- {{ 'home.hero.sub-title' | translate:translateService.GetLang }} -->
+              Dolor ea incididunt sunt nulla anim consequat.
+              ea incididunt sunt nulla anim consequat.
+              incididunt sunt nulla anim consequat.
+        </p>
+
+        <a class="btn btn--primary" routerLink="../contact">
+            {{ 'button.contact' | translate:translateService.GetLang }}
+             <img 
+                [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/icon/icon-whatsapp.svg'" 
+                width="15"
+                height="15"
+                alt="contact icon">
+        </a>
+
+    </div>
+
+    <div class="block__right">
+        <img 
+            [src]="'../../../../assets/theme/'+themeService.GetTheme+'/img/img-hero.svg'" 
+            priority
+            alt="contact icon"
+        >
+    </div>
+</div>

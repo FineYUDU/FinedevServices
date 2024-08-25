@@ -1,0 +1,49 @@
+<div class="container block">
+    <p class="
+        font__size--h5
+        font__weight--bold
+        font__color--primary
+        ">
+        {{ 'home.services.title' | translate:translateService.GetLang }}
+    </p>
+    <div class="container__block">
+        @for (menu of servicesMenu(); track $index) {
+            
+            <div class="card">
+                <div class="card__header">
+    
+                    
+                </div>
+    
+                <div class="card__body">
+                    <p class="
+                        font__size--b1
+                        font__weight--semibold
+                        font__color--brand-secondary
+                        ">
+                        {{ menu.title| translate:translateService.GetLang }}
+    
+                    </p>
+                    <p class="
+                        font__size--b2
+                        font__weight--regular
+                        font__color--secondary
+                        ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nostrum dolor numquam necessitatibus laudantium sunt, temporibus voluptatum blanditiis nihil harum.
+    
+                    </p>
+                </div>
+    
+                <div class="card__footer">
+                    <a class="btn btn--primary">
+                        {{ 'button.info' | translate:translateService.GetLang }}
+                    </a>
+    
+                </div>
+    
+            </div>
+
+        }
+
+    </div>
+</div>

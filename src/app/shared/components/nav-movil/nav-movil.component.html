@@ -1,0 +1,176 @@
+<div class="container">
+    <div class="icon-hamburger" (click)="collapseDropdown()">
+        <div class="line line-1" 
+            [ngClass]="{'rotate-top' : isOpenDropdown}">
+        </div>
+        <div class="line line-2" 
+            [ngClass]="{'opacity-0' : isOpenDropdown}">
+        </div>
+        <div class="line line-3" 
+            [ngClass]="{'rotate-bottom' : isOpenDropdown}">
+        </div>
+    </div>
+
+    <div class="sidebar" [ngClass]="{'collapse' : !isOpenDropdown}">
+        <img 
+            [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/logos/logo.svg'" 
+            alt="Logo"
+            width="75"
+            height="75"
+            priority
+        >
+        <ul>
+            <p class="
+                font__size--h6
+                font__color--secondary
+                font__weight--bold
+                padding-bottom
+                ">
+                {{ 'menu.nav' | translate:translateService.GetLang }}
+            </p>
+            @for (menu of menusService.menuNavigation(); track $index) {
+                <li>
+                    <a class="
+                        font__size--b1
+                        font__color--secondary
+                        font__weight--regular
+                        "
+                        (click)="collapseDropdown()"
+                        [routerLink]="menu.router" 
+                        routerLinkActive="active--route" 
+                        >
+                        {{ menu.txt| translate:translateService.GetLang }}
+                    </a>
+                </li>
+            }
+        </ul>
+
+        <!-- Setting -->
+
+        <ul>
+            <p class="
+                    font__size--h6
+                    font__color--secondary
+                    font__weight--bold
+                    padding-bottom
+                ">
+                {{ 'menu.settings' | translate:translateService.GetLang }}
+            </p>
+
+            <!-- ? Lang -->
+            <div class="group__list">
+                <li class="group__list--title" (click)="openLangDropdown()">
+                    <a class="
+                        font__size--b1
+                        font__color--secondary
+                        font__weight--regular
+                        ">
+                        {{ 'menu.lang' | translate:translateService.GetLang }}
+                    </a>
+                    <img 
+                        width="15"
+                        height="15"
+                        class="chevron"
+                        src="../../../../assets/theme/light/icon/icon-chevron.svg"
+                        alt="chevron"
+                        [ngClass]="{'rotate': isDropdownLangOpen }">
+                </li>
+                <div class="dropdown-grid"
+                    [ngClass]="{'open-dropdown': isDropdownLangOpen }">
+                    <ul class="dropdown">
+                        <li [ngClass]="{'selected' : translateService.GetLang === 'es'}">
+                            <a class="
+                                font__size--b1
+                                font__color--secondary
+                                font__weight--regular
+                                "
+                                [ngClass]="{'active--route' : translateService.GetLang === 'es'}"
+                                (click)="translateService.toggleLang('es')"
+                                >
+                                {{ 'lang.es' | translate:translateService.GetLang }}
+                            </a>
+                        </li>
+        
+                        <li [ngClass]="{'selected' : translateService.GetLang === 'en'}">
+                            <a class="
+                                font__size--b1
+                                font__color--secondary
+                                font__weight--regular
+                                "
+                                [ngClass]="{'active--route' : translateService.GetLang === 'en'}"
+                                (click)="translateService.toggleLang('en')"
+                                >
+                                {{ 'lang.en' | translate:translateService.GetLang }}
+                            </a>
+                        </li>
+                        <div class="line--dropdown"></div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ? Theme -->
+            <div class="group__list">
+                <li class="group__list--title" (click)="openThemeDropdown()">
+                    <a class="
+                        font__size--b1
+                        font__color--secondary
+                        font__weight--regular
+                        ">
+                        {{ 'menu.appearance' | translate:translateService.GetLang }}
+                    </a>
+                    <img 
+                        width="15"
+                        height="15"
+                        class="chevron"
+                        src="../../../../assets/theme/light/icon/icon-chevron.svg"
+                        alt="chevron"
+                        [ngClass]="{'rotate': isDropdownThemeOpen }">
+                </li>
+                <div class="dropdown-grid"
+                    [ngClass]="{'open-dropdown': isDropdownThemeOpen }">
+                    <ul class="dropdown">
+                        <li [ngClass]="{'selected' : themeService.GetTheme === 'dark'}">
+                            <a class="
+                                font__size--b1
+                                font__color--secondary
+                                font__weight--regular
+                                "
+                                [ngClass]="{'active--route' : themeService.GetTheme === 'dark'}"
+                                (click)="themeService.changeTheme('dark')"
+                                >
+                                {{ 'theme.dark' | translate:translateService.GetLang }}
+                            </a>
+                        </li>
+        
+                        <li [ngClass]="{'selected' : themeService.GetTheme === 'light'}">
+                            <a class="
+                                font__size--b1
+                                font__color--secondary
+                                font__weight--regular
+                                "
+                                [ngClass]="{'active--route' : themeService.GetTheme === 'light'}"
+                                (click)="themeService.changeTheme('light')"
+                                >
+                                {{ 'theme.light' | translate:translateService.GetLang }}
+                            </a>
+                        </li>
+                        <div class="line--dropdown"></div>
+                    </ul>
+                </div>
+            </div>
+
+        </ul>
+
+        
+        <p class="
+            font__size--b1
+            font__color--secondary
+            font__weight--regular
+            position-bottom
+        ">
+        {{ footer() }}
+        </p>
+
+    </div>
+    
+</div>

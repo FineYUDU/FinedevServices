@@ -1,0 +1,50 @@
+{
+    "lang":{
+        "selected":"Inglés",
+        "es":"Spanish",
+        "en":"English"
+    },
+    "theme":{
+        "light":"Light",
+        "dark":"Dark"
+    },
+    "button":{
+        "contact":"Contact",
+        "services":"Services",
+        "about-service":"About service",
+        "info":"Ask for information",
+        "back":"Back to services page"
+    },
+    "menu":{
+        "home":"Home",
+        "about":"About us",
+        "services":"Services",
+        "contact":"Contact",
+        "nav":"Navigation",
+        "settings":"Settings",
+        "lang":"Language",
+        "appearance":"Appearance"
+    },
+    "footer":{
+        "titles":{
+            "contact":"Contact",
+            "menu":"Menu"
+        },
+        "subtitles":{
+            "social-media":"Social Media"
+        },
+        "dev":"Dev by:"
+    },
+    "home":{
+        "hero":{
+            "title":"Web Design and Development",
+            "sub-title":"Boost your brand on the Web"
+        },
+        "services":{
+            "title":"Services"
+        },
+        "clients":{
+            "title":"Our Clients"
+        }
+    }
+}

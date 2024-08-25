@@ -1,0 +1,106 @@
+<div class="container">
+    <div class="body">
+        <div class="body--grid">
+            <p class="
+                    font__color--tertiary
+                    font__wight--medium
+                    font__size--h5
+                    title__align-end
+                    item-contact-title
+                ">
+                {{'footer.titles.contact' | translate:translateService.GetLang}}
+            </p>
+            <p class="
+                    font__color--tertiary
+                    font__wight--medium
+                    font__size--h5
+                    title__align-end
+                    item-menu-title
+                ">
+                {{'footer.titles.menu' | translate:translateService.GetLang}}
+            </p>
+            <img 
+                [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/logos/logo-isologo-footer.svg'"
+                width="125"
+                height="55"
+                class="item-logo"
+                alt="my logo"
+                priority
+            />
+            <div class="contact item-contact">
+                <ul>
+                    <li class="
+                        font__color--secondary
+                        font__wight--medium
+                        font__size--b1
+                        ">
+                        {{ email() }}  
+                    </li>
+                    <li class="
+                        font__color--secondary
+                        font__wight--medium
+                        font__size--b1
+                        ">
+                        {{ whatsapp() }}  
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-menu item-menu">
+                <ul>
+                    @for (menu of menusService.menuNavigation(); track $index) {
+                        <li>
+                            <a  [routerLink]="menu.router" 
+                                routerLinkActive="active--route" 
+                                (click)="scrollTopService.scrollToTop()"
+                                class="
+                                    font__color--secondary
+                                    font__wight--medium
+                                    font__size--b1
+                                ">
+                                {{ menu.txt | translate:translateService.GetLang }}
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+                        
+            <div class="social-media item-social-media">
+                <p class="
+                        font__color--secondary
+                        font__wight--medium
+                        font__size--b2
+                    ">
+                    {{ 'footer.subtitles.social-media' | translate:translateService.GetLang }}
+                </p>
+                <div class="icons">
+                    <a  href="https://www.instagram.com/fine.developer"
+                        target="_blank"
+                        class="icon--container">
+                        <img 
+                            [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/logos/logo-instagram.svg'"
+                            width="25"
+                            height="25"
+                            alt="my logo"
+                        />
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="hr"></div>
+        <div class="container--footer">
+            <p class="
+                font__color--secondary
+                font__wight--medium
+                font__size--b2
+                ">
+                <span>
+                    {{ 'footer.dev' | translate:translateService.GetLang }}
+                </span>
+                {{footer()}}
+            </p>
+        </div>
+    </div>
+
+</div>

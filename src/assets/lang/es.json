@@ -1,0 +1,50 @@
+{
+    "lang":{
+        "selected":"Español",
+        "es":"Español",
+        "en":"Inglés"
+    },
+    "theme":{
+        "light":"Claro",
+        "dark":"Oscuro"
+    },
+    "button":{
+        "contact":"Contacto",
+        "services":"Servicios",
+        "about-service":"Acerca del servicio",
+        "info":"Solicitar información",
+        "back":"Volver a la página de servicios"
+    },
+    "menu":{
+        "home":"Inicio",
+        "about":"Nosotros",
+        "services":"Servicios",
+        "contact":"Contacto",
+        "nav":"Navegación",
+        "settings":"Ajustes",
+        "lang":"Lenguaje",
+        "appearance":"Apariencia"
+    },
+    "footer":{
+        "titles":{
+            "contact":"Contacto",
+            "menu":"Menú"
+        },
+        "subtitles":{
+            "social-media":"Redes Sociales"
+        },
+        "dev":"Desarrollado por:"
+    },
+    "home":{
+        "hero":{
+            "title":"Diseño y Desarrollo Web",
+            "sub-title":"Impulsa tu marca en la Web"
+        },
+        "services":{
+            "title":"Servicios"
+        },
+        "clients":{
+            "title":"Nuestros clientes"
+        }
+    }
+}

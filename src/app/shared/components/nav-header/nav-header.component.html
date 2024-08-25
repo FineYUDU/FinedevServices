@@ -1,0 +1,36 @@
+<div class="container" [ngClass]="{'hide-menu' : hideMenu() }">
+    <div class="container--body">
+        <img 
+            [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/logos/logo-isologo.svg'" 
+            routerLink="home"
+            height="55" 
+            width="125"
+            priority
+            [alt]="'logo '+ companyName"
+        />
+    
+        <ul>
+            @for (menu of menusService.menuNavigation(); track $index) {
+                <li>
+                    <a class="
+                        font__size--b2
+                        font__weight--regular
+                        "
+                        [routerLink]="menu.router" 
+                        routerLinkActive="active--route" 
+                        >
+                        {{ menu.txt| translate:translateService.GetLang }}
+                    </a>
+                </li>
+            }
+            <theme-toggle class="p-left"/>
+
+            <translate-dropdown/>
+        </ul>
+        <div class="nav-movile">
+            <nav-movil/>
+        </div>
+
+    </div>
+
+</div>
