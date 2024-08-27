@@ -125,5 +125,16 @@
     --fd-color-success                                                              :#{$success-600};
     --fd-color-warning                                                              :#{$warning-600};
     --fd-color-danger                                                               :#{$danger-600};
-    --fd-bg-blocks                                                                  :#{$grey-100};
+    --fd-color-title                                                                :#{$grey-0};
+    --fd-bg-blocks                                                                  :#{$grey-600};
+    --fd-color-title-primary                                                        :#{$brand-300};
+    --fd-color-subtitle-brand-primary                                               :#{$grey-500};
+    --fd-color-subtitle-primary                                                     :#{$brand-100};
+    //
+    // * ---------------------------------- Cards ----------------------------------------------
+    //
+    --fd-color-bg-card                                                              :#{$grey-100};
+    --fd-color-border-card                                                          :#{$grey-100};
+    --fd-color-title-card                                                           :#{$grey-100};
+    --fd-color-txt-card                                                             :#{$grey-100};
 }

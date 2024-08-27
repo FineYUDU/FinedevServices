@@ -13,10 +13,10 @@
         position: relative;
     }
     .block__bg--my-services {
-        background-color: var(--fd-color-bg-quintary);
+        background-color: var(--fd-bg-blocks);
     }
     .block__bg--my-clients {
-        background-color: var(--fd-color-bg-quintary);
+        background-color: var(--fd-bg-blocks);
     }
     
 }

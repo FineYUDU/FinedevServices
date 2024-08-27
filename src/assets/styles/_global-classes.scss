@@ -53,6 +53,18 @@
     .font__color--link {
         color: var(--fd-color-brand-primary);
     }
+    .font__color--block-title {
+        color: var(--fd-color-title);
+    }
+    .font__color--title-primary {
+        color: var(--fd-color-title-primary);
+    }
+    .font__color--subtitle-brand-primary {
+        color: var(--fd-color-subtitle-primary);
+    }
+    .font__color--subtitle-primary {
+        color: var(--fd-color-subtitle-brand-primary);
+    }
     // * ---------------------------------- Lang ----------------------------------------------
     .font__color--lang {
         color: var(--fd-color-lang-primary);

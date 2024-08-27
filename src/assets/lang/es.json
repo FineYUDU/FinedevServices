@@ -13,7 +13,8 @@
         "services":"Servicios",
         "about-service":"Acerca del servicio",
         "info":"Solicitar información",
-        "back":"Volver a la página de servicios"
+        "back":"Volver a la página de servicios",
+        "start":"Empieza ya"
     },
     "menu":{
         "home":"Inicio",
@@ -37,8 +38,14 @@
     },
     "home":{
         "hero":{
-            "title":"Diseño y Desarrollo Web",
-            "sub-title":"Impulsa tu marca en la Web"
+            "title":"Diseño y Desarrollo Web para tu negocio",
+            "sub-title-1":"Potencia tu presencia",
+            "sub-spam":"online",
+            "sub-title-2":"y conecta tu marca con el mundo digital",
+            "li-1":"Dominio gratis",
+            "li-2":"Diseño adaptable a dispositivos móviles",
+            "li-3":"Primer mes de soporte técnico gratis",
+            "warranty":"Garantía de 30 días"
         },
         "services":{
             "title":"Servicios"

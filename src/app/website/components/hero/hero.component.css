@@ -1,6 +1,6 @@
 .hero {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 2fr;
     gap: var(--spacing-md);
     align-items: center;
 
@@ -12,6 +12,13 @@
         .block__left--header {
             display: flex;
             flex-direction: column;
+        }
+
+        .li__container {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+
         }
     }
 
@@ -27,27 +34,18 @@
     }
 
 }
-/* .bg--block {
-    position: absolute;
-    top: -100%;
-    bottom: 0;
-    right: 0;
-    left: 40%;
-    background-color: var(--fd-bg-blocks);
-    border-top-left-radius: var(--radius-minimal);
-    border-bottom-left-radius: 135rem;
-    z-index: -1;
-} */
 
 /* ? Breakpoint SM */
 @media screen and (max-width:460px) {
     .hero {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto auto;
         gap: var(--spacing-lg);
         
         .block__left {
             width: 100%; 
+            grid-area: 2;
             
             a {
                 box-sizing: border-box;
@@ -57,7 +55,47 @@
     
         .block__right {
             position: relative;
-            min-height: 21.875rem;
+            min-height: fit-content;
+            grid-area: 1;
+    
+            img {
+                width: 100%;
+                height: auto;
+            }
+    
+        }
+    
+    }
+    .bg--block {
+        top: 45%;
+        left: 15%;
+        border-top-left-radius: 120rem;
+    }
+    
+}
+
+/* ? Breakpoint MD */
+@media screen and (min-width:461px) and (max-width:1024px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto auto;
+        gap: var(--spacing-lg);
+        
+        .block__left {
+            width: 100%; 
+            grid-area: 2;
+            
+            a {
+                box-sizing: border-box;
+                width: 100%;
+            }
+        }
+    
+        .block__right {
+            position: relative;
+            min-height: fit-content;
+            grid-area: 1;
     
             img {
                 width: 100%;

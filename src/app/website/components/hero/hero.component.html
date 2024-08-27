@@ -3,47 +3,78 @@
     <div class="block__left">
         <div class="block__left--header">
             <h1 class="
-            font__size--h3
-            font__weight--bold
-            font__color--primary
+                font__size--h4
+                font__weight--bold
+                font__color--title-primary
                 ">
                 {{ 'home.hero.title' | translate:translateService.GetLang }}
             </h1>
+
             <h2 class="
             font__size--h6
-            font__weight--regular
-            font__color--secondary
+            font__weight--medium
+            font__color--subtitle-primary
                 ">
-                {{ 'home.hero.sub-title' | translate:translateService.GetLang }}
+                {{ 'home.hero.sub-title-1' | translate:translateService.GetLang }}
+                <span class="
+                    font__weight--semibold
+                    font__color--subtitle-brand-primary
+                    ">
+                    {{ 'home.hero.sub-spam' | translate:translateService.GetLang }}
+                </span>
+                {{ 'home.hero.sub-title-2' | translate:translateService.GetLang }}
             </h2>
             
         </div>
         
-        <p class="
-        font__size--b1
-        font__weight--regular
-        font__color--tertiary
-            ">
-            <!-- {{ 'home.hero.sub-title' | translate:translateService.GetLang }} -->
-              Dolor ea incididunt sunt nulla anim consequat.
-              ea incididunt sunt nulla anim consequat.
-              incididunt sunt nulla anim consequat.
-        </p>
+        <ul>
+            @for (item of liSubtitle(); track $index) {
+                <li class="
+                    font__size--b1
+                    font__weight--regular
+                    font__color--primary
+                    ">
+                    <div class="li__container">
+                        <img 
+                            [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/icon/icon-check.svg'" 
+                            width="19"
+                            height="19"
+                            alt="icon check">
+                        {{ item | translate:translateService.GetLang }}
+                    </div>
+    
+                </li>
+            }
+        </ul>
 
         <a class="btn btn--primary" routerLink="../contact">
-            {{ 'button.contact' | translate:translateService.GetLang }}
+            {{ 'button.start' | translate:translateService.GetLang }}
              <img 
                 [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/icon/icon-whatsapp.svg'" 
                 width="15"
                 height="15"
                 alt="contact icon">
         </a>
+        <h1 class="
+            font__size--b1
+            font__weight--regular
+            font__color--primary
+            ">
+            <div class="li__container">
+                <img 
+                [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/icon/icon-security.svg'" 
+                width="19"
+                height="19"
+                alt="icon check">
+                {{ 'home.hero.warranty' | translate:translateService.GetLang }}
+            </div>
+        </h1>
 
     </div>
 
     <div class="block__right">
         <img 
-            [src]="'../../../../assets/theme/'+themeService.GetTheme+'/img/img-hero.svg'" 
+            [src]="'../../../../assets/theme/'+themeService.GetTheme+'/img/img-hero.webp'" 
             priority
             alt="contact icon"
         >

@@ -13,7 +13,8 @@
         "services":"Services",
         "about-service":"About service",
         "info":"Ask for information",
-        "back":"Back to services page"
+        "back":"Back to services page",
+        "start":"Start now"
     },
     "menu":{
         "home":"Home",
@@ -37,8 +38,15 @@
     },
     "home":{
         "hero":{
-            "title":"Web Design and Development",
-            "sub-title":"Boost your brand on the Web"
+            "title":"Web Design and Development for your business",
+            "sub-title-1":"Boost your ",
+            "sub-spam":"online ",
+            "sub-title-2":"presence and connect your brand with the digital world",
+            "li-1":"Free Domain",
+            "li-2":"Mobile-friendly design",
+            "li-3":"First month of support free",
+            "warranty":"30-day guarantee"
+
         },
         "services":{
             "title":"Services"
