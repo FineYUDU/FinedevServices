@@ -6,7 +6,7 @@ import { TranslateService } from '../../../core/services/translate.service';
 
 import { HeroComponent } from '../../components/home/hero/hero.component';
 import { MyClientsComponent } from '../../components/home/my-clients/my-clients.component';
-import { MyServicesComponent } from '../../components/my-services/my-services.component';
+import { PlansComponent } from '../../components/home/plans/plans.component';
 
 @Component({
   selector: 'home',
@@ -14,7 +14,7 @@ import { MyServicesComponent } from '../../components/my-services/my-services.co
   imports: [
     HeroComponent,
     TranslatePipe,
-    MyServicesComponent,
+    PlansComponent,
     MyClientsComponent,
   ],
   templateUrl: './home.component.html',

@@ -1,1 +1,113 @@
-<p>plans works!</p>
+<div class="container block">
+    <p class="
+        font__size--h5
+        font__weight--bold
+        font__color--block-title
+        ">
+        {{ 'home.plans.title' | translate:translateService.GetLang }}
+    </p>
+    <div class="container__block">
+        @for (menu of plansMenu(); track $index) {
+            
+            <div [ngClass]="{
+                    'card-recommended': menu.recommended,
+                    'card': !menu.recommended
+                    }">
+                @if(menu.recommended) {
+                    <p class="
+                        txt-recommended
+                        font__size--b1
+                        font__weight--semibold
+                        ">
+                        {{ 'home.plans.recommended' | translate:translateService.GetLang }}
+                    </p>
+                }
+                <div class="card__header">
+                    <div class="card__header--top">
+                        <p class="
+                            font__size--h5
+                            font__weight--bold
+                            ">
+                            {{menu.plan}}
+                        </p>
+                        <p class="
+                            font__size--c1
+                            font__weight--regular
+                            ">
+                            {{ menu.description| translate:translateService.GetLang }}
+                        </p>
+                    </div>
+
+                    <div class="card__header--bottom">
+                        <p class="
+                            font__size--h4
+                            font__weight--bold
+                            ">
+                            {{menu.price}}
+                            <span class="
+                                font__weight--regular
+                                ">
+                                MXN
+                            </span>
+                        </p>
+                        <p class="
+                            font__size--b2
+                            font__weight--regular
+                            ">
+                            +{{menu.month}}
+                            <span>
+                                @if (menu.month >1) {
+                                    {{ 'home.plans.months' | translate:translateService.GetLang }}
+                                }
+                                @else {
+                                    {{ 'home.plans.month' | translate:translateService.GetLang }}
+                                }
+                            </span>
+                            <span>
+                                {{ 'home.plans.support' | translate:translateService.GetLang }}
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="hr"></div>
+
+                </div>
+    
+                <div class="card__body">
+                    <ul>
+                        @for (li of menu.list; track $index) {
+                            <li>
+                                <div class="li__container">
+                                    <img 
+                                        src="../../../../../assets/theme/dark/icon/icon-check.svg" 
+                                        width="15"
+                                        height="15"
+                                        alt="icon check">
+                                    <p class="
+                                        font__size--c1
+                                        font__weight--regular
+                                        ">
+                                        {{ li | translate:translateService.GetLang }}
+                                    </p>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+    
+                <div class="card__footer">
+                    <a class="btn" [ngClass]="{
+                        'btn--primary': menu.recommended,
+                        'btn--outline__secondary': !menu.recommended
+                        }">
+                        {{ 'button.choose' | translate:translateService.GetLang }}
+                    </a>
+    
+                </div>
+    
+            </div>
+
+        }
+
+    </div>
+</div>

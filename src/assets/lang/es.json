@@ -14,7 +14,8 @@
         "about-service":"Acerca del servicio",
         "info":"Solicitar información",
         "back":"Volver a la página de servicios",
-        "start":"Empieza ya"
+        "start":"Empieza ya",
+        "choose":"Elegir plan"
     },
     "menu":{
         "home":"Inicio",
@@ -47,8 +48,59 @@
             "li-3":"Primer mes de soporte técnico gratis",
             "warranty":"Garantía de 30 días"
         },
-        "services":{
-            "title":"Servicios"
+        "plans":{
+            "title":"Elige tu plan ideal",
+            "month":"mes",
+            "months":"meses",
+            "support":"de soporte gratis",
+            "recommended":"Recomendado",
+            "plan-1":{
+                "description":"Ideal para emprender: simple, eficiente y con todo lo esencial para establecer tu presencia digital.",
+                "li":{
+                    "li-1":"1 Página estatica con los datos de tu emprendimiento.",
+                    "li-2":"1 año de hosting.",
+                    "li-3":"Dominio.",
+                    "li-4":"Enlaces a redes sociales.",
+                    "li-5":"Botoón de enlace a WhatsApp con mensajes personalizados.",
+                    "li-6":"Ubicación con Google Maps.",
+                    "li-7":"Optimización para motores de búsqueda, Google (SEO).",
+                    "li-8":"Diseño adaptable a dispositivos móviles."
+                }
+            },
+            "plan-2":{
+                "description":"Tu negocioha crecido y necesitas un catálogo de servicios o productos. Este es tu plan ideal.",
+                "li":{
+                    "li-1":"Página de: Inicio, Nosotros, Servicios, Catálogo de productos(hasta 50), Contacto.",
+                    "li-2":"1 año de hosting.",
+                    "li-3":"Dominio.",
+                    "li-4":"Enlaces a redes sociales.",
+                    "li-5":"Botoón de enlace a WhatsApp con mensajes personalizados.",
+                    "li-6":"Ubicación con Google Maps.",
+                    "li-7":"Optimización para motores de búsqueda, Google (SEO).",
+                    "li-8":"Diseño adaptable a dispositivos móviles.",
+                    "li-9":"Idiomas (Inglés y español).",
+                    "li-10":"Diseño de marca(Tu logotipo y manual de identidad)."
+                }
+            },
+            "plan-3":{
+                "description":"Este plan es para quienes van en serio. Con él, tendrás todo lo que necesitas: cátalogo de productos y servicios en dos idiomas y una estetica con cambio de modos, optimizados y listos para mostrar tu oferta al mundo.",
+                "li":{
+                    "li-1":"Página de: Inicio, Nosotros, Servicios, Catálogo de productos(hasta 100), Contacto.",
+                    "li-2":"1 año de hosting.",
+                    "li-3":"Diseño de interfaces personalizadas.",
+                    "li-4":"Dominio.",
+                    "li-5":"Enlaces a redes sociales.",
+                    "li-6":"Botoón de enlace a WhatsApp con mensajes personalizados.",
+                    "li-7":"Ubicación con Google Maps.",
+                    "li-8":"Optimización para motores de búsqueda, Google (SEO).",
+                    "li-9":"Diseño adaptable a dispositivos móviles.",
+                    "li-10":"Idiomas (Inglés y español).",
+                    "li-11":"Dark mode y light mode.",
+                    "li-12":"Formulario de contacto y correo empresarial.",
+                    "li-13":"Diseño de marca(Tu logotipo y manual de identidad)."
+                }
+            }
+
         },
         "clients":{
             "title":"Nuestros clientes"

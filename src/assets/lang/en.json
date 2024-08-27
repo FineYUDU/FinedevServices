@@ -14,7 +14,8 @@
         "about-service":"About service",
         "info":"Ask for information",
         "back":"Back to services page",
-        "start":"Start now"
+        "start":"Start now",
+        "choose":"Choose plan"
     },
     "menu":{
         "home":"Home",
@@ -46,10 +47,60 @@
             "li-2":"Mobile-friendly design",
             "li-3":"First month of support free",
             "warranty":"30-day guarantee"
-
         },
-        "services":{
-            "title":"Services"
+        "plans":{
+            "title":"Choose your ideal plan",
+            "month":"months",
+            "months":"months",
+            "support":"free support",
+            "recommended":"Recommended",
+            "plan-1":{
+                "description":"Ideal for entrepreneurs: simple, efficient and with everything essential to establish your digital presence.",
+                "li":{
+                    "li-1":"1 Static page with your business data.",
+                    "li-2":"1 year of hosting.",
+                    "li-3":"Domain.",
+                    "li-4":"Links to social networks.",
+                    "li-5":"WhatsApp link button with personalized messages.",
+                    "li-6":"Location with Google Maps.",
+                    "li-7":"Search engine optimization, Google (SEO).",
+                    "li-8":"Design responsive to mobile devices."
+            }
+            },
+            "plan-2":{
+                "description":"Your business has grown and you need a catalog of services or products. This is your ideal plan.",
+                "li":{
+                    "li-1":"Page: Home, About us, Services, Product catalog (up to 50), Contact.",
+                    "li-2":"1 year of hosting.",
+                    "li-3":"Domain.",
+                    "li-4":"Links to social networks.",
+                    "li-5":"WhatsApp link button with personalized messages.",
+                    "li-6":"Location with Google Maps.",
+                    "li-7":"Search engine optimization, Google (SEO).",
+                    "li-8":"Design adaptable to mobile devices.",
+                    "li-9":"Languages ​​(English and Spanish).",
+                    "li-10":"Brand design (Your logo and identity manual)."
+            }
+            },
+            "plan-3":{
+                "description":"This plan is for those who are serious. With it, you will have everything you need: a catalog of products and services in two languages ​​and an aesthetic with a change of modes, optimized and ready to show your offer to the world.",
+                "li":{
+                    "li-1":"Page: Home, About us, Services, Product catalog (up to 100), Contact.",
+                    "li-2":"1 year of hosting.",
+                    "li-3":"Custom interface design.",
+                    "li-4":"Domain.",
+                    "li-5":"Links to social networks.",
+                    "li-6":"WhatsApp link button with personalized messages.",
+                    "li-7":"Location with Google Maps.",
+                    "li-8":"Search engine optimization, Google (SEO).",
+                    "li-9":"Design adaptable to mobile devices.",
+                    "li-10":"Languages ​​(English and Spanish).",
+                    "li-11":"Dark mode and light mode.",
+                    "li-12":"Contact form and business email.",
+                    "li-13":"Brand design (Your logo and identity manual)."
+                }
+            }
+
         },
         "clients":{
             "title":"Our Clients"

@@ -20,10 +20,6 @@ export class MenusService {
       router:'about'
     },
     {
-      txt:'menu.services',
-      router:'services'
-    },
-    {
       txt:'menu.contact',
       router:'contact'
     },

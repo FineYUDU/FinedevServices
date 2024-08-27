@@ -132,8 +132,10 @@
     //
     // * ---------------------------------- Cards ----------------------------------------------
     //
-    --fd-color-bg-card                                                              :#{$grey-100};
-    --fd-color-border-card                                                          :#{$grey-100};
-    --fd-color-title-card                                                           :#{$grey-100};
+    --fd-color-bg-card                                                              :#{$grey-700};
+    --fd-color-brand-bg-card                                                        :#{$brand-50};
+    --fd-color-border-card                                                          :#{$grey-300};
+    --fd-color-txt-primary-card                                                     :#{$grey-0};
+    --fd-color-txt-brand-primary-card                                               :#{$brand-100};
     --fd-color-txt-card                                                             :#{$grey-100};
 }

@@ -13,5 +13,5 @@ export class CompanyService {
     public company = computed<string>( ()=> this._companyName() );
     public email = computed<string>( ()=> this._email() );
     public footer = computed<string>( ()=> this._footer() );
-    public whatsApp = computed<string>( ()=> `${this._lada} ${this._phoneNumber}`);
+    public whatsApp = computed<string>( ()=> `${this._lada()} ${this._phoneNumber()}`);
 }
