@@ -2,10 +2,10 @@ import { Component, inject, signal } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { TranslatePipe } from '../../../shared/pipes/translate.pipe';
+import { TranslatePipe } from '../../../../shared/pipes/translate.pipe';
 
-import { TranslateService } from '../../../core/services/translate.service';
-import { ThemeService } from '../../../core/services/theme.service';
+import { TranslateService } from '../../../../core/services/translate.service';
+import { ThemeService } from '../../../../core/services/theme.service';
 
 
 @Component({

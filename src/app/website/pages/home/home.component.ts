@@ -4,8 +4,8 @@ import { TranslatePipe } from '../../../shared/pipes/translate.pipe';
 
 import { TranslateService } from '../../../core/services/translate.service';
 
-import { HeroComponent } from '../../components/hero/hero.component';
-import { MyClientsComponent } from '../../components/my-clients/my-clients.component';
+import { HeroComponent } from '../../components/home/hero/hero.component';
+import { MyClientsComponent } from '../../components/home/my-clients/my-clients.component';
 import { MyServicesComponent } from '../../components/my-services/my-services.component';
 
 @Component({
