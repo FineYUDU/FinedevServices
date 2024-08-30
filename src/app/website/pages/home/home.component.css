@@ -12,11 +12,14 @@
     .block__bg--hero {
         position: relative;
     }
-    .block__bg--my-services {
-        background-color: var(--fd-bg-blocks);
+    .block__bg--solutions {
+        background-color: var(--fd-bg-primary-blocks);
+    }
+    .block__bg--plans {
+        background-color: var(--fd-bg-primary-blocks);
     }
     .block__bg--my-clients {
-        background-color: var(--fd-bg-blocks);
+        background-color: var(--fd-bg-primary-blocks);
     }
     
 }
