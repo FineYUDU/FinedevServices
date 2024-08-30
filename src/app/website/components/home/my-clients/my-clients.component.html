@@ -12,7 +12,21 @@
 
     <div class="block__logos">
         @for ( client of clients(); track $index) {
-            <img [src]="'../../../../assets/theme/'+themeService.GetTheme+'/logos/clients/logo-'+client.url+'.svg'" alt="logo">
+            <a class="logo__contaier" target="_blank" [href]="client.url">
+                <img 
+                class="logo__client"
+                [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/logos/clients/logo-'+client.name+'.svg'" 
+                [alt]="'logo '+client.name"
+                width="150"
+                height="150">
+                <img 
+                class="logo__client--no-color"
+                [ngSrc]="'../../../../assets/theme/'+themeService.GetTheme+'/logos/clients/hover/logo-'+client.name+'.svg'" 
+                [alt]="'logo '+client.name"
+                width="150"
+                height="150">
+
+            </a>
         }
     </div>
 </div>

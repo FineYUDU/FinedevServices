@@ -4,9 +4,11 @@ import { TranslatePipe } from '../../../../shared/pipes/translate.pipe';
 
 import { TranslateService } from '../../../../core/services/translate.service';
 import { ThemeService } from '../../../../core/services/theme.service';
+import { NgOptimizedImage } from '@angular/common';
 
 export interface Clients {
-  url:string;
+  name:string;
+  url?:string;
 }
 
 @Component({
@@ -14,6 +16,7 @@ export interface Clients {
   standalone: true,
   imports: [
     TranslatePipe,
+    NgOptimizedImage,
   ],
   templateUrl: './my-clients.component.html',
   styleUrl: './my-clients.component.css'
@@ -27,14 +30,12 @@ export class MyClientsComponent {
 
   public clients = signal<Clients[]>([
     {
-      url:'dista-clean'
+      name:'dista-clean',
+      url:'https://dista-clean.com/'
     },
-    // {
-    //   url:'Vertro'
-    // },
-    // {
-    //   url:'Bizflow'
-    // },
+    {
+      name:'bizflow'
+    },
   ])
 
 
