@@ -43,10 +43,38 @@
             "sub-title-1":"Potencia tu presencia",
             "sub-spam":"online",
             "sub-title-2":"y conecta tu marca con el mundo digital",
-            "li-1":"Dominio gratis",
-            "li-2":"Diseño adaptable a dispositivos móviles",
-            "li-3":"Primer mes de soporte técnico gratis",
+            "li-1":"Diseño adaptable a dispositivos móviles",
+            "li-2":"Primer mes de soporte técnico gratis",
+            "li-3":"Diseño de marca",
+            "li-4":"Correo empresarial",
             "warranty":"Garantía de 30 días"
+        },
+        "solutions": {
+            "title": "Soluciones",
+            "card-1":{
+                "title":"Dominio",
+                "description":"Es la dirección única que identifica a un sitio web en Internet. Es lo que los usuarios escriben en la barra de direcciones de su navegador para acceder a un sitio web específico, como www.minegocio.com."
+            },
+            "card-2":{
+                "title":"Diseño de interfaces",
+                "description":"Es la interfaz gráfica de tu sitio web, lo que el usuario puede ver y con lo que interactúa."
+            },
+            "card-3":{
+                "title":"Experiencia de usuario",
+                "description":"Se refiere a la experiencia y satisfacción que un usuario tiene al interactuar con nuestra web, especialmente en términos de usabilidad, accesibilidad y eficiencia."
+            },
+            "card-4":{
+                "title":"Diseño de marca",
+                "description":"Es la identidad visual y emocional de nuestra marca o negocio, la cual incluye elementos como logotipo, colores, tipografía y estilo visual que representan y diferencian a la marca en el mercado."
+            },
+            "card-5":{
+                "title":"Adaptable a dispositivos móviles",
+                "description":"Tu Sitio Web optimizado para todos los dispositivos con un diseño adaptable. Asegura una experiencia de usuario fluida y atractiva en móviles y tablets, aumentando el acceso y la satisfacción del cliente. ¡Haz que tu sitio web brille en cualquier pantalla!"
+            },
+            "card-6":{
+                "title":"Múltiples idiomas",
+                "description":"Expande tu negocio globalmente al ofrecer un sitio web en varios idiomas. Mejora la experiencia del usuario al permitirles navegar en su idioma preferido, aumentando la accesibilidad y la conexión con clientes de diferentes regiones. ¡Haz que tu marca sea global!."
+            }
         },
         "plans":{
             "title":"Elige tu plan ideal",

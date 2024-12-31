@@ -13,7 +13,7 @@
         position: relative;
     }
     .block__bg--solutions {
-        background-color: var(--fd-bg-primary-blocks);
+        background-color: var(--fd-bg-secondary-blocks);
     }
     .block__bg--plans {
         background-color: var(--fd-bg-primary-blocks);

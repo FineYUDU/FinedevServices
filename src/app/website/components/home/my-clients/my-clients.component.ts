@@ -34,7 +34,8 @@ export class MyClientsComponent {
       url:'https://dista-clean.com/'
     },
     {
-      name:'bizflow'
+      name:'bizflow',
+      url:'https://bizflow.pe/'
     },
   ])
 

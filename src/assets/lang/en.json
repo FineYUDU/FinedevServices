@@ -43,11 +43,39 @@
             "sub-title-1":"Boost your ",
             "sub-spam":"online ",
             "sub-title-2":"presence and connect your brand with the digital world",
-            "li-1":"Free Domain",
-            "li-2":"Mobile-friendly design",
-            "li-3":"First month of support free",
+            "li-1":"Mobile-friendly design",
+            "li-2":"First month of support free",
+            "li-3":"Brand design",
+            "li-4":"Business email",
             "warranty":"30-day guarantee"
         },
+        "solutions":{
+            "title":"Solutions",
+            "card-1":{
+                "title":"Domain",
+                "description":"It is the unique address that identifies a website on the Internet. It is what users type into their browser's address bar to access a specific website, such as www.mybusiness.com."
+            },
+            "card-2":{
+                "title":"Interface Design",
+                "description":"It is the graphical interface of your website, what the user can see and interact with."
+            },
+            "card-3":{
+                "title":"User Experience",
+                "description":"It refers to the experience and satisfaction a user has when interacting with our website, especially in terms of usability, accessibility, and efficiency."
+            },
+            "card-4":{
+                "title":"Brand Design",
+                "description":"It is the visual and emotional identity of our brand or business, which includes elements like logo, colors, typography, and visual style that represent and differentiate the brand in the market."
+            },
+            "card-5":{
+                "title":"Mobile Device Compatibility",
+                "description":"Your website optimized for all devices with a responsive design. Ensures a smooth and engaging user experience on mobile and tablet devices, increasing access and customer satisfaction. Make your website shine on any screen!"
+            },
+            "card-6":{
+                "title":"Multiple Languages",
+                "description":"Expand your business globally by offering a website in multiple languages. Enhance the user experience by allowing them to navigate in their preferred language, increasing accessibility and connection with customers from different regions. Make your brand global!"
+            }
+        },        
         "plans":{
             "title":"Choose your ideal plan",
             "month":"months",

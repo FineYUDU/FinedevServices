@@ -29,6 +29,7 @@ export class HeroComponent {
     "home.hero.li-1",
     "home.hero.li-2",
     "home.hero.li-3",
+    "home.hero.li-4",
   ])
 
 }

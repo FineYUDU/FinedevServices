@@ -1,8 +1,6 @@
 import { Injectable} from '@angular/core';
-
 @Injectable({providedIn: 'root'})
 export class LocalStorageService {
-    
     constructor() {
         let lang;
         let theme;
@@ -25,5 +23,4 @@ export class LocalStorageService {
           localStorage.setItem('theme', 'dark');
         }
     }
-
 }

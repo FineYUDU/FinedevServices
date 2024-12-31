@@ -1,0 +1,44 @@
+<div class="container block">
+    <p class="
+        font__size--h5
+        font__weight--bold
+        font__color--primary
+        ">
+        {{ 'home.solutions.title' | translate:translateService.GetLang }}
+    </p>
+    <div class="container__block">
+        @for (item of solutions(); track item.title; let i = $index;) {
+            <div class="card item-{{i}}" >
+                <div class="card__header">
+                    <div class="icon">
+                        <img src="" alt="">
+                    </div>
+
+                </div>
+                
+                <div class="card__body">
+                    <p class="
+                        font__size--h6
+                        font__weight--bold
+                        font__color--primary
+                        ">
+                        {{ item.title | translate:translateService.GetLang }}
+                    </p>                    
+                    <p class="
+                        font__size--b2
+                        font__weight--regular
+                        font__color--primary
+                        ">
+                        {{ item.description | translate:translateService.GetLang }}
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <!-- <button class="btn">
+                        {{ 'about this' | translate:translateService.GetLang }}
+                    </button> -->
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
